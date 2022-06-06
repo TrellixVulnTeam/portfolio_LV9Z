@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;    
+    font-family:monospace;    
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/* Declaramos la estructura del Sitio Web */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: 250px 70px auto auto 150px;
+    grid-template-areas: "header  header"
+                         "navbar  navbar"
+                         "main    main"
+                         "section section"
+                         "footer  footer";
+}
+
+.header{
+    grid-area: header;
+}
+.navbar{
+    grid-area: navbar;
+}
+.main{
+    grid-area: main; 
+}
+.section{
+    grid-area: section;
+}
+.footer{
+    grid-area: footer;
+}
+
+/*  ESTILOS PARA EL HEADER */
+.header{
+    background-color: rgba(8, 8, 8, 0.9);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+.header__titulo{
+    color:#fff;
+    font-size: 14px;
+    text-align: center;
+    margin: 5px;
+}
+.header__img{        
+    background-image: url(../images/me.svg);
+    background-size: cover;
+    width:120px;
+    height:100px;      
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.521);    
+}
+.header__redes ul { 
+    list-style-type: none;
+}
+.header__redes ul li{
+    padding: 1px;
+}
+.header__redes ul li a{
+    text-decoration: none;
+}
+.header__redes ul{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 20px;
+}
+.header__redes ul li a img{
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilos para el Nav o barra de menu */
+.navbar{    
+    background-color: rgba(42, 79, 245, 0.651);
+}
+.navbar ul{
+    list-style-type: none;   
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+
+}
+.navbar ul li{
+    padding: 5px 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Estilos para el Main - seccion de About me */
+
+.main{ 
+    width: 100%;
+}
+.main__about{
+    margin: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 5px;
+}
+.main__about img{
+    width: 150px;
+    height: 150px;
+    margin:10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+.main__about__titulo{
+    margin: 20px;
+}
+
+/* Estilos para el section - tarjetas */
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section h2{
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.proyect__card{
+    margin: 10px;
+    width:80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+.proyect__card div img{
+    width:100%;
+    height: 250px;
+    border:0;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.proyect__card__titulo{
+    margin: 5px;
+}
+
+.proyect__card__descripcion{
+    padding: 10px;
+    text-align: center;
+}
+.proyect__card__btn{
+    padding: 10px;
+    margin: 10px;
+    background-color: #A6775B;
+    border-radius:10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para el Footer */
+
+.footer{
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.9);
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;      
+    justify-content: space-around;
+}
+.footer__creador{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;    
+}
+.menu ul li{
+    padding: 5px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.footer__redesSociales ul{
+    list-style-type: none;    
+    display: flex;
+    flex-wrap: wrap
+}
+.footer__redesSociales ul li{
+    padding: 5px;
+}
+.footer__redesSociales ul li a{
+    text-decoration: none;
+}
+.footer__redesSociales ul li a img{
+    width: 25px;
+    height:25px;
+}
+
+/* Estilos para skill - seccion de habilidades */
+
+.skill{
+    width: 100%;    
+    display: flex;      
+    flex-direction: column;
+    align-items: center;    
+}
+.skill__card{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;    
+}
+.skill__titulo{
+    margin: 10px;
+}
+
+.section__skill__card{
+    width: 100%;
+    height: 200px;
+    
+}
+.section__skill__card ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+.section__skill__card ul li{
+    padding: 10px;
+}
+.section__skill__card ul li img{
+    width: 100%;
+}
+
+.skill__developer{
+    margin: 10px;
+    width:90%;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;    
+    align-items: center;    
+    color: rgba(122, 122, 122, 0.774);
+    padding: 10px;
+}
+
+.skill__developer__titulo{
+    margin: 10px;
+    color: rgb(7, 153, 250);
+}
+
+/* Estilos para el formulario */
+
+.formulario{
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.form__encabezado{    
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;    
+}
+.form__encabezado h4{
+    text-align: center;
+    margin-top: 20px;
+}
+.form__grupo{    
+    width: 250px;
+    display: flex;
+    padding: 10px;    
+    flex-wrap: wrap;    
+}
+.btn{
+    display: flex;
+    padding: 5px;
+    border:0;    
+    background-color:rgb(0, 0, 0);   
+    border-radius:10px;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+    color:#fff;
+}
+
+/* Adaptado a diferentes dispositivos */

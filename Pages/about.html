@@ -5,26 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Aguero</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <!-- encabezado  -->
-    <header>
-        <div class="header__redesSociales">
-            <ul>
-                <li><a href="../index.html"><img src="../images/github__.png" alt="Git Hub"></a></li>
-                <li><a href="about.html"><img src="../images/linkedin.png" alt="Linkedin"></a></li>
-                <li><a href="proyect.html"><img src="../images/twitter.png" alt="twitter"></a></li>
-                <li><a href="skills.html"><img src="../images/facebook__.png" alt="facebook"></a></li>
-                <li><a href="contact.html"><img src="../images/instagram.png" alt="instagram"></a></li>
-              </ul>
-        </div>
-        <div class="header__encabezado">
+    <div class="container">
+        <header class="header">        
             <h1 class="header__titulo">Hi there, I'm Gabriel Aguero, I'm web developer</h1>
-            <img src="../images/me.svg" alt="Foto de Gabriel Aguero, Desarrollador Web" class="header__img">
-        </div>
-    </header>
-        <nav>
+            <div class="header__img">          
+            </div>
+            
+            <div class="header__redes">
+              <ul>
+                <li><a href="#"><img src="../assets/images/github__.png" alt="Git Hub"></a></li>
+                <li><a href="#"><img src="../assets/images/linkedin.png" alt="Linkedin"></a></li>
+                <li><a href="#"><img src="../assets/images/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="../assets/images/facebook__.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="../assets/images/instagram.png" alt="instagram"></a></li>
+              </ul>         
+            </div>  
+        </header>
+
+        <nav class="navbar">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About me</a></li>
@@ -33,57 +34,43 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>          
         </nav>
-    <!-- fin de encabezado  -->
-    <main class="container">
-        <section>            
-            <article class="section__about">
-                <h2>About me</h2>
-                <img src="../images/me.svg" alt="Foto de Gabriel Aguero, Desarrollador Web">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis optio suscipit fugit sequi, asperiores odit reprehenderit soluta excepturi nulla saepe sed at quae nostrum explicabo cupiditate rerum. Placeat, inventore pariatur?
-                    Fuga corporis vitae quasi, praesentium nisi atque odio ratione ad assumenda cum explicabo nostrum? Tempore, officiis inventore. Nesciunt error optio sequi velit odio non, cum commodi quidem quibusdam! Blanditiis, repellendus?
-                    Fugit, voluptates eum illum ullam voluptas culpa eligendi deleniti possimus quisquam ducimus sunt eveniet molestiae veritatis explicabo ea ipsam id distinctio vero eius? Voluptatem, nam rerum quos ullam nemo adipisci.
-                    Dolore, excepturi? Quasi sunt impedit cupiditate ratione blanditiis ipsa at perspiciatis qui quaerat ipsum esse soluta, saepe sint omnis facilis possimus magnam dolorem necessitatibus in voluptate! Harum inventore possimus impedit?
-                    Eius accusamus, numquam quod vero ex doloribus unde tempora. Blanditiis alias sed tempore, quos fugit magnam atque a ipsam odio veritatis sit quisquam, accusamus sunt tenetur excepturi similique officiis quaerat!
-                </p>
-            </article>
-        
-            <article>
-                <div class="about__redesSociales">
-                    <h2>Puedes encontrarme en</h2>
-                    <ul>
-                        <li><a href="../index.html"><img src="../images/github.png" alt="Git Hub"></a></li>
-                        <li><a href="about.html"><img src="../images/linkedin.png" alt="Linkedin"></a></li>
-                        <li><a href="proyect.html"><img src="../images/twitter.png" alt="twitter"></a></li>
-                        <li><a href="skills.html"><img src="../images/facebook.png" alt="facebook"></a></li>
-                        <li><a href="contact.html"><img src="../images/instagram.png" alt="instagram"></a></li>
-                    </ul>                                                                                                                       
-                </div>
-            </article>
-        </section>            
-    </main>
-</body> 
-    <footer>
-        <div class="menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="proyect.html">Proyect</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer__redesSociales">
-            <h4>Encuentrame en</h4>
-            <ul>
-                <li><a href="../index.html"><img src="../images/github__.png" alt="Git Hub"></a></li>
-                <li><a href="about.html"><img src="../images/linkedin.png" alt="Linkedin"></a></li>
-                <li><a href="proyect.html"><img src="../images/twitter.png" alt="twitter"></a></li>
-                <li><a href="skills.html"><img src="../images/facebook__.png" alt="facebook"></a></li>
-                <li><a href="contact.html"><img src="../images/instagram.png" alt="instagram"></a></li>
-              </ul>          
-        </div>
 
-        <p>@2022 Desgin an Development by <strong>Gabriel Aguero</strong></p>
-    </footer>
+        <main class="main">        
+            <div class="main__about">
+              <img src="../assets/images/me.svg" alt="Foto de Gabriel Aguero, Desarrollador Web">
+              <h2 class="main__about__titulo">About me</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis optio suscipit fugit sequi, asperiores odit reprehenderit soluta excepturi nulla saepe sed at quae nostrum explicabo cupiditate rerum. Placeat, inventore pariatur?
+                Fuga corporis vitae quasi, praesentium nisi atque odio ratione ad assumenda cum explicabo nostrum? Tempore, officiis inventore. Nesciunt error optio sequi velit odio non, cum commodi quidem quibusdam! Blanditiis, repellendus?
+                Fugit, voluptates eum illum ullam voluptas culpa eligendi deleniti possimus quisquam ducimus sunt eveniet molestiae veritatis explicabo ea ipsam id distinctio vero eius? Voluptatem, nam rerum quos ullam nemo adipisci.             
+              </p>          
+            </div>        
+        </main> 
+
+        <footer class="footer">
+            <div class="menu">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About me</a></li>
+                <li><a href="./proyect.html">Proyect</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          
+            <div class="footer__redesSociales">          
+              <ul>
+                <li><a href="#"><img src="../assets/images/github__.png" alt="Git Hub"></a></li>
+                <li><a href="#"><img src="../assets/images/linkedin.png" alt="Linkedin"></a></li>
+                <li><a href="#"><img src="../assets/images/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="../assets/images/facebook__.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="../assets/images/instagram.png" alt="instagram"></a></li>
+              </ul>          
+            </div>
+          
+            <p class="footer__creador">@2022 Desgin an Development by Gabriel Aguero</p>
+        </footer>
+    </div>
+            
+</body> 
+    
 </html>

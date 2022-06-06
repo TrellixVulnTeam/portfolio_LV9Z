@@ -5,94 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Aguero</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
   <body>
-    <!-- encabezado  -->
-    <header>
-      <div class="header__redesSociales">
-          <ul>
-              <li><a href="../index.html"><img src="../images/github__.png" alt="Git Hub"></a></li>
-              <li><a href="about.html"><img src="../images/linkedin.png" alt="Linkedin"></a></li>
-              <li><a href="proyect.html"><img src="../images/twitter.png" alt="twitter"></a></li>
-              <li><a href="skills.html"><img src="../images/facebook__.png" alt="facebook"></a></li>
-              <li><a href="contact.html"><img src="../images/instagram.png" alt="instagram"></a></li>
+    <div class="container">
+        <header class="header">        
+          <h1 class="header__titulo">Hi there, I'm Gabriel Aguero, I'm web developer</h1>
+          <div class="header__img">          
+          </div>
+          
+          <div class="header__redes">
+            <ul>
+              <li><a href="#"><img src="../assets/images/github__.png" alt="Git Hub"></a></li>
+              <li><a href="#"><img src="../assets/images/linkedin.png" alt="Linkedin"></a></li>
+              <li><a href="#"><img src="../assets/images/twitter.png" alt="twitter"></a></li>
+              <li><a href="#"><img src="../assets/images/facebook__.png" alt="facebook"></a></li>
+              <li><a href="#"><img src="../assets/images/instagram.png" alt="instagram"></a></li>
+            </ul>         
+          </div>  
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="proyect.html">Proyect</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>          
+        </nav>
+    
+        <main class="main">          
+          <form class="formulario" action="">            
+              <div class="form__encabezado">
+                <h4>Completa los datos del formulario para dejar tu consulta</h4>	
+                <img src="../assets/images/email.png" alt="email">
+              </div>
+              
+              <div class="form__grupo">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" >
+              </div>
+              
+              <div class="form__grupo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Ingresa tu email">
+              </div>
+              
+              <div class="form__grupo">
+                <label for="mensaje">Tu Mensaje</label>      
+                <textarea name="mensaje" id="mensaje" cols="30" rows="3" placeholder="Escribe tu consulta aqui"></textarea>
+              </div>
+              
+              <div class="form_btn">
+                <input class="btn type="button" value="Enviar">
+              </div>          
+            
+          </form>
+        </main>
+    
+        <footer class="footer">
+          <div class="menu">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About me</a></li>
+              <li><a href="./proyect.html">Proyect</a></li>
+              <li><a href="./skills.html">Skills</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
-          <div class="header__encabezado">
-            <h1 class="header__titulo">Hi there, I'm Gabriel Aguero, I'm web developer</h1>
-            <img src="../images/me.svg" alt="Foto de Gabriel Aguero, Desarrollador Web" class="header__img">
+        
+          <div class="footer__redesSociales">          
+            <ul>
+              <li><a href="#"><img src="../assets/images/github__.png" alt="Git Hub"></a></li>
+              <li><a href="#"><img src="../assets/images/linkedin.png" alt="Linkedin"></a></li>
+              <li><a href="#"><img src="../assets/images/twitter.png" alt="twitter"></a></li>
+              <li><a href="#"><img src="../assets/images/facebook__.png" alt="facebook"></a></li>
+              <li><a href="#"><img src="../assets/images/instagram.png" alt="instagram"></a></li>
+            </ul>          
           </div>
-    </header>
-    <!-- fin de encabezado  -->
-    
-    <nav>
-      <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="about.html">About me</a></li>
-          <li><a href="proyect.html">Proyect</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="contact.html">Contact</a></li>
-      </ul>          
-    </nav>
-
-  <main>
-    <section>     
-      <div class="form_contacto">
-        <h2>Contact</h2>  
-        <form action="">
-          <fieldset>
-            <div>
-              <legend>Completa los datos del formulario para dejar tu consulta</legend>	
-              <img src="../images/email.png" alt="email">
-            </div>
-            
-            <div class="form__grupo">
-              <label for="nombre">Nombre</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" >
-            </div>
-            
-            <div class="form__grupo">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Ingresa tu email">
-            </div>
-            
-            <div class="form__grupo">
-              <label for="mensaje">Tu Mensaje</label>      
-              <textarea name="mensaje" id="mensaje" cols="30" rows="3" placeholder="Escribe tu consulta aqui"></textarea>
-            </div>
-            
-            <div class="form_datos">
-              <input type="button" value="Enviar">
-            </div>          
-          </fieldset>          
-        </form>      
-      </div> 
-      </section>
-    </main>
-</body>
-<footer>
-  <div class="menu">
-      <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="about.html">About me</a></li>
-          <li><a href="proyect.html">Proyect</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="contact.html">Contact</a></li>
-      </ul>
-  </div>
-  
-  <div class="footer__redesSociales">
-      <h4>Encuentrame en</h4>
-      <ul>
-          <li><a href="../index.html"><img src="../images/github__.png" alt="Git Hub"></a></li>
-          <li><a href="about.html"><img src="../images/linkedin.png" alt="Linkedin"></a></li>
-          <li><a href="proyect.html"><img src="../images/twitter.png" alt="twitter"></a></li>
-          <li><a href="skills.html"><img src="../images/facebook__.png" alt="facebook"></a></li>
-          <li><a href="contact.html"><img src="../images/instagram.png" alt="instagram"></a></li>
-        </ul>          
-  </div>
-
-  <p>@2022 Desgin an Development by <strong>Gabriel Aguero</strong></p>
-</footer>
+        
+          <p class="footer__creador">@2022 Desgin an Development by Gabriel Aguero</p>
+        </footer>    
+    </div>  
+  </body>
 </html>
