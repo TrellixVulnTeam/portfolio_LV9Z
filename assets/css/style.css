@@ -10,13 +10,15 @@
 
 .container{
     display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: repeat(2 1fr);
-    grid-template-rows: 250px 70px auto auto 150px;
-    grid-template-areas: "header  header"
-                         "navbar  navbar"
-                         "main    main"
-                         "section section"
-                         "footer  footer";
+    grid-template-rows: 250px 90px auto auto 150px;
+    grid-template-areas: "header           header"
+                         "navbar           navbar"
+                         "section_about    section_about"
+                         "section_proyect  section_proyect"
+                         "footer           footer";
 }
 
 .header{
@@ -25,11 +27,11 @@
 .navbar{
     grid-area: navbar;
 }
-.main{
-    grid-area: main; 
+.section_about{
+    grid-area: section_about; 
 }
-.section{
-    grid-area: section;
+.section_proyect{
+    grid-area: section_proyect;
 }
 .footer{
     grid-area: footer;
@@ -37,7 +39,9 @@
 
 /*  ESTILOS PARA EL HEADER */
 .header{
-    background-color: rgba(8, 8, 8, 0.9);
+    background: linear-gradient(45deg, #b7b8b9, #293036);    
+    /* background: linear-gradient(45deg, #102eff, #d2379b); */
+    /* background-color: rgba(8, 8, 8, 0.9); */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -46,9 +50,10 @@
 }
 .header__titulo{
     color:#fff;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
-    margin: 5px;
+    margin: 15px 5px;
+    padding: 5px;
 }
 .header__img{        
     background-image: url(../images/me.svg);
@@ -62,7 +67,7 @@
     list-style-type: none;
 }
 .header__redes ul li{
-    padding: 1px;
+    padding: 5px;
 }
 .header__redes ul li a{
     text-decoration: none;
@@ -74,13 +79,17 @@
     padding: 20px;
 }
 .header__redes ul li a img{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 /* Estilos para el Nav o barra de menu */
 .navbar{    
-    background-color: rgba(42, 79, 245, 0.651);
+    background-color:#000;
+    /* background-color: #1489F5;     */
+    border-bottom: 1px solid #fff;
+    position: sticky;
+    top: 0;
 }
 .navbar ul{
     list-style-type: none;   
@@ -88,23 +97,36 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap:wrap;
-
+    
 }
 .navbar ul li{
-    padding: 5px 10px;
+    padding: 20px 10px;       
+    
 }
 .navbar ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 20px;    
+    padding: 15px;
+     
 }
+.navbar ul li a:hover{
+    border-bottom: 5px solid #F2BB16;;
+    /* background-color: rgb(0, 4, 221); */
+    padding: 15px;
+}
+/* Estilos para el section about- me */
 
-/* Estilos para el Main - seccion de About me */
-
-.main{ 
+main{
+    width: 100%;
+    display: flex;    
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.section__about{ 
     width: 100%;
 }
-.main__about{
+.about__me{
     margin: 10px;
     display: flex;
     justify-content:center;
@@ -112,39 +134,45 @@
     flex-direction: column;
     padding: 20px 5px;
 }
-.main__about img{
+.about__me img{
     width: 150px;
     height: 150px;
     margin:10px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.438);
 }
-.main__about__titulo{
+.about__me__titulo{
     margin: 20px;
 }
 
 /* Estilos para el section - tarjetas */
 
-.section{
+.section_proyect{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.section h2{
+.section_proyect h2{
     font-size: 20px;
     margin: 10px;
     text-align: center;
 }
 .proyect__card{
     margin: 10px;
-    width:80%;
+    width:90%;
     border-radius: 10px;
     box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;    
     align-items: center;
 }
-.proyect__card div img{
+.proyect__card__contenido{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proyect__card img{
     width:100%;
     height: 250px;
     border:0;
@@ -168,12 +196,22 @@
     color: #fff;
     text-decoration: none;
 }
+.proyect__card__btn:hover{
+    padding: 10px;
+    margin: 10px;
+    background-color: #F2BB16;
+    border-radius:10px;
+    color: #000;
+    text-decoration: none;
+}
+
 
 /* Estilos para el Footer */
 
 .footer{
-    width: 100%;
-    background-color: rgba(8, 8, 8, 0.9);
+    width: 100%;    
+    background-color:#000;
+    /* background-color: rgba(8, 8, 8, 0.9); */
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;      
@@ -232,26 +270,26 @@
 }
 
 .section__skill__card{
-    width: 100%;
-    height: 200px;
+    width: 100%;  
     
 }
 .section__skill__card ul{
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    justify-content: center;
+    margin: 1px;
 }
 .section__skill__card ul li{
-    padding: 10px;
+    padding: 20px;
 }
 .section__skill__card ul li img{
-    width: 100%;
+    width: 100%;    
 }
 
 .skill__developer{
-    margin: 10px;
+    margin: 30px;
     width:90%;
     border-radius: 6px;
     box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
@@ -263,18 +301,33 @@
 }
 
 .skill__developer__titulo{
-    margin: 10px;
+    margin: 20px;
+    padding: 10px;
     color: rgb(7, 153, 250);
 }
 
 /* Estilos para el formulario */
 
+.main_formulario{
+    width: 100%;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;   
+}
+
 .formulario{
-    width: 300px;
+    width: 90%;
+    max-width:600px;
     margin: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    flex-wrap: wrap;
+    padding: 50px;
+    align-items: center;   
+    border-radius: 10px;   
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2);
+    
 }
 .form__encabezado{    
     display: flex;
@@ -282,26 +335,177 @@
     justify-content:center;
     align-items: center;    
 }
-.form__encabezado h4{
+.form__encabezado h2{
     text-align: center;
     margin-top: 20px;
 }
+.form__encabezado img{
+    border:0;     
+}
 .form__grupo{    
-    width: 250px;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     padding: 10px;    
     flex-wrap: wrap;    
 }
-.btn{
-    display: flex;
+.form__grupo label{
+    font-size:20px;
+    color: #000;
+    padding: 10px;
+}
+.form__grupo input{    
     padding: 5px;
-    border:0;    
-    background-color:rgb(0, 0, 0);   
-    border-radius:10px;
-    justify-content: center;
-    margin: 10px;
+    width: 80%;
+    border-radius: 5px;            
+}
+.form__grupo textarea{ 
+    padding: 5px;
+    width: 80%;
+    border-radius: 5px;            
+}
+.form__grupo textarea:hover{ 
+    background-color:#F2BB16;
+}
+.form__grupo input:hover{
+    background-color:#F2BB16;
+}
+.form_btn{
+    width: 100%;    
+    display: flex;
     text-align: center;
-    color:#fff;
+    justify-content: center;
+    margin: 10px;        
+}
+.btn{
+    width: 100%;
+    border:0;
+    padding: 10px;
+    border:0;        
+    border-radius:10px;    
+}
+.btn:hover{
+    background-color:#F2BB16;
+    cursor: pointer;
+    
 }
 
 /* Adaptado a diferentes dispositivos */
+
+@media (min-width: 480px){
+    .footer{
+        width: 100%;    
+        background-color:#000;
+        /* background-color: rgba(8, 8, 8, 0.9); */
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;      
+        align-items:center;
+        padding:20px;
+    }
+    .proyect__card{
+        margin: 10px;
+        width:400px;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+    }
+    .proyect__card img{        
+        height: 250px;
+        border:0;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+@media (min-width: 600px){        
+ /* a partir de aqui la seccion proyecto debe ir en forma horizontal */
+    .proyect__card{    
+        width:500px;    
+        display: flex;
+        flex-direction: row;    
+        align-items: center;
+    }
+    .proyect__card img{     
+        border-radius: 10px 0 0 10px;
+
+    }
+}
+
+@media (min-width: 678px){        
+    /* a partir de aqui la seccion proyecto debe ir en forma horizontal */     
+    
+    .section_proyect{        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    .section_proyect h2{
+        width: 100%;
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+    .proyect__card{    
+        width:300px;    
+        display: flex;
+        flex-direction: column;    
+        justify-content:center;
+    }
+    .proyect__card img{     
+        border-radius: 10px 10px 0 0;
+    }
+}
+@media (min-width: 1200px){        
+    /* a partir de aqui la seccion proyecto debe ir en forma horizontal */     
+    .header{                     
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;   
+    }
+    .header__titulo{
+        color:#fff;
+        font-size: 20px;
+        text-align: center;
+        margin: 15px 5px;
+        padding: 5px;
+    }
+    .header__img{        
+        background-image: url(../images/me.svg);
+        background-size: cover;
+        width:150px;
+        height:150px;      
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.521);    
+    }
+    .section_proyect{        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    .section_proyect h2{
+        width: 100%;
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+    .proyect__card{    
+        width:25%;    
+        margin: 10px 20px;
+        display: flex;
+        flex-direction: column;    
+        justify-content:center;
+    }
+    .proyect__card img{     
+        border-radius: 10px 10px 0 0;
+    }
+}
