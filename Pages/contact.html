@@ -5,92 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Aguero</title>
+    <script src="https://kit.fontawesome.com/d8c98b08b3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <div class="navbar">
-          <img src="../assets/images/logo.svg" class="Logo">                   
-          <img class="icono_menu" src="../assets/images/menu-responsive.svg" alt="icono de menu hamburguesa">  
-          
-          <ul class="navbar__links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About me</a></li>
-            <li><a href="./proyect.html">Proyect</a></li>
-            <li><a href="./skills.html">Skill</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>          
-        </div>         
-        
-        
-        <div class="header__titulo">
-          <h1 class="header__descripcion">Hi there, I'm Gabriel Aguero, I'm web developer</h1>
-          <img src="../assets/images/me.svg" alt="" class="header__img">
-        </div>
-               
-        <div class="header__redes">
-          <ul>
-            <li><a href="https://github.com/Gabriel-Aguero" target="_blank"><img src="../assets/images/img_redes/github.svg" alt="Logo de Git Hub"></a></li>
-            <li><a href="https://www.linkedin.com/in/gabriel-ag%C3%BCero/" target="_blank"><img src="../assets/images/img_redes/linkedin.svg" alt="Logo de Linkedin"></a></li>
-            <li><a href="https://twitter.com/gabrielhaguero" target="_blank"><img src="../assets/images/img_redes/twitter.svg" alt="Logo de Twitter"></a></li>
-            <li><a href="#"><img src="../assets/images/img_redes/facebook.svg" alt="Logo de Facebook"></a></li>
-            <li><a href="https://www.instagram.com/gabyhaguero/" target="_blank"><img src="../assets/images/img_redes/instragram.svg" alt="Logo de Instagram"></a></li>
-          </ul>         
-        </div>  
-      </header>
-    
-        <main class="main_formulario">             
-          <div class="form__encabezado">
-            <h2>Completa los datos del formulario para dejar tu consulta</h2>	
-            <img src="../assets/images/email.png" alt="email">
-          </div>
-         
-          <form class="formulario" action="">            
-            <div class="form__grupo">
-              <label for="nombre">Nombre</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" >
-            </div>
-            
-            <div class="form__grupo">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Ingresa tu email">
-            </div>
-            
-            <div class="form__grupo">
-              <label for="mensaje">Tu Mensaje</label>      
-              <textarea name="mensaje" id="mensaje" cols="30" rows="3" placeholder="Escribe tu consulta aqui"></textarea>
-            </div>
-              
-            <div class="form_btn">
-              <input class="btn" type="submit" value="Enviar">
-            </div>                      
-          </form>         
-        </main>
-    
-        <footer class="footer">
-          <div class="footer__menu">
-            <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="./about.html">About me</a></li>
-              <li><a href="./proyect.html">Proyect</a></li>
-              <li><a href="./skills.html">Skills</a></li>
-              <li><a href="./contact.html">Contact</a></li>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head> 
+  <body>   
+    <div class="container">  
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">              
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./proyect.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./skills.html">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contacto</a>
+              </li>              
             </ul>
           </div>
-        
-          <div class="footer__redesSociales">          
-            <ul>
-              <li><a href="https://github.com/Gabriel-Aguero" target="_blank"><img src="../assets/images/img_redes/github.svg" alt="Logo de Git Hub"></a></li>
-              <li><a href="https://www.linkedin.com/in/gabriel-ag%C3%BCero/" target="_blank"><img src="../assets/images/img_redes/linkedin.svg" alt="Logo de Linkedin"></a></li>
-              <li><a href="https://twitter.com/gabrielhaguero" target="_blank"><img src="../assets/images/img_redes/twitter.svg" alt="Logo de Twitter"></a></li>
-              <li><a href="#"><img src="../assets/images/img_redes/facebook.svg" alt="Logo de Facebook"></a></li>
-              <li><a href="https://www.instagram.com/gabyhaguero/" target="_blank"><img src="../assets/images/img_redes/instragram.svg" alt="Logo de Instagram"></a></li>
-            </ul>          
-          </div>        
-          <p class="footer__creador">@2022 Desgin an Development by Gabriel Aguero</p>
-          <img src="../assets/images/wavefooter.svg" alt="">
-        </footer>    
-    </div>  
+        </div>
+      </nav>                     
+      <!-- FIN NAVBAR -->
+
+      <!-- HEADER   -->
+      <div class="row header mx-0">
+        <div class="col-xs-12 col-md-12 col-lg-12 text-center">
+          <h1>Hola, mi nombre es Gabriel Aguero</h1>
+          <p>Programador Web FullStack</p>
+        </div>
+      </div>
+      <!-- FIN HEADER -->
+
+      <!-- MAIN -->
+      <main>    
+        <div class="row my-5">
+          <h2 class="text-center mb-4">Formualario de contacto</h2>
+          <div class="col-xs-12 col-md-6 col-lg-6">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+            </div>
+          </div>
+          
+          <div class="col-xs-12 col-md-6 col-lg-6">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="example@email.com">
+            </div>
+          </div>  
+
+          <div class="col-xs-12 col-md-12 col-lg-12">
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe un mensaje"></textarea>
+            </div>
+          </div>
+
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Enviar</button>              
+          </div>
+            
+        </div>
+
+      
+      </main>
+      <!-- FIN MAIN -->
+      
+      <!-- FOOTER -->
+      <div class="row bg-dark mx-0">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <ul class="nav justify-content-center my-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./proyect.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./skills.html">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contacto</a>
+            </li>              
+          </ul>
+        </div>        
+        <div class="col-xs-12 col-md-12 col-lg-12 text-center">
+          <a href="https://github.com/Gabriel-Aguero" target="blank" class="btn btn-dark"><img src="../assets/images/img_redes/github.svg" target="blank" alt="Logo de gitHub"></a>        
+          <a href="#" target="blank" class="btn btn-dark"><img src="../assets/images/img_redes/facebook.svg" alt="Logo de Facebook"></a>        
+          <a href="https://www.instagram.com/gabyhaguero/" target="blank" class="btn btn-dark"><img src="../assets/images/img_redes/instragram.svg" alt="Logo de Instagram"></a>        
+          <a href="https://www.linkedin.com/in/gabriel-ag%C3%BCero/" target="blank" class="btn btn-dark"><img src="../assets/images/img_redes/linkedin.svg" alt="Logo de Linkedin"></a>        
+          <a href="https://twitter.com/gabrielhaguero" target="blank" class="btn btn-dark"><img src="../assets/images/img_redes/twitter.svg" alt="Logo de twitter"></a>        
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-12 my-4 text-center">
+          <figcaption class="blockquote-footer">
+            Sitio creado con Bootstrap por <cite title="Source Title">Gabriel Aguero</cite>
+          </figcaption>          
+        </div>
+      </div>      
+      <!-- FIN FOOTER -->
+    </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+      <script>
+      AOS.init();
+      </script>      
+      <!-- BOOTSTRAP -->
+      <script src="../assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

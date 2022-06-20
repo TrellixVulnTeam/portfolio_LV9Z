@@ -10,150 +10,178 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 </head> 
-  <body>
-    <div class="container">
-      <header class="header">
-        <div class="navbar">
-          <h2 data-aos="zoom-in">Gabriel Aguero</h2>                   
-          <img class="icono_menu" src="./assets/images/menu-responsive.svg" alt="icono de menu hamburguesa">  
-          
-          <ul class="navbar__links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pages/about.html">Sobre mi</a></li>
-            <li><a href="pages/proyect.html">Proyectos</a></li>
-            <li><a href="pages/skills.html">Habilidades</a></li>
-            <li><a href="pages/contact.html">Contacto</a></li>
-          </ul>          
-        </div>         
-                
-        <div class="header__titulo">
-          <h1 class="header__descripcion">Hi there, I'm Gabriel Aguero, I'm web developer</h1>
-          <!-- <img src="./assets/images/me.svg" alt="" class="header__img"> -->
+  <body>   
+    <div class="container">  
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">              
+              <li class="nav-item">
+                <a class="nav-link active" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/about.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/proyect.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/skills.html">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contact.html">Contacto</a>
+              </li>              
+            </ul>
+          </div>
         </div>
-               
-        <div class="header__redes">
-          <ul>
-            <li><a href="https://github.com/Gabriel-Aguero" target="_blank"><img src="./assets/images/img_redes/github.svg" alt="Logo de Git Hub"></a></li>
-            <li><a href="https://www.linkedin.com/in/gabriel-ag%C3%BCero/" target="_blank"><img src="./assets/images/img_redes/linkedin.svg" alt="Logo de Linkedin"></a></li>
-            <li><a href="https://twitter.com/gabrielhaguero" target="_blank"><img src="./assets/images/img_redes/twitter.svg" alt="Logo de Twitter"></a></li>
-            <li><a href="#"><img src="./assets/images/img_redes/facebook.svg" alt="Logo de Facebook"></a></li>
-            <li><a href="https://www.instagram.com/gabyhaguero/" target="_blank"><img src="./assets/images/img_redes/instragram.svg" alt="Logo de Instagram"></a></li>
-          </ul>         
-        </div>  
-      </header>
-                    
-      <main class="main">
-        <section class="section_about">
-          <article class="about__me">
-            <img src="./assets/images/me.svg" alt="Foto de Gabriel Aguero, Desarrollador Web">
-            <h2 class="about__me__titulo">Sobre mi</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis optio suscipit fugit sequi, asperiores odit reprehenderit soluta excepturi nulla saepe sed at quae nostrum explicabo cupiditate rerum. Placeat, inventore pariatur?
-              Fuga corporis vitae quasi, praesentium nisi atque odio ratione ad assumenda cum explicabo nostrum? Tempore, officiis inventore. Nesciunt error optio sequi velit odio non, cum commodi quidem quibusdam! Blanditiis, repellendus?
-              Fugit, voluptates eum illum ullam voluptas culpa eligendi deleniti possimus quisquam ducimus sunt eveniet molestiae veritatis explicabo ea ipsam id distinctio vero eius? Voluptatem, nam rerum quos ullam nemo adipisci.             
-            </p>          
-          </article>        
-        </section>        
-               
-        <section class="section_proyect">          
-            <h2>Proyectos</h2>                  
-          
-            <div class="proyect__card" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">                           
-              <img src="./assets/images/img_proyect/responsive.jpg" alt="Foto del proyecto 1">                            
-              <div class="proyect__card__contenido">
-                <h3 class="proyect__card__titulo">Proyecto 1</h3>
-                <p class="proyect__card__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <a class="proyect__card__btn" href="#">Leer más</a>                      
-              </div>
-            </div>
-            
-            <div class="proyect__card" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">                          
-               <img src="./assets/images/img_proyect/maquetacion.jpg" alt="Foto del proyecto 2">                          
-              <div class="proyect__card__contenido">
-                <h3 class="proyect__card__titulo">Proyecto 2</h3>
-                <p class="proyect__card__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <a class="proyect__card__btn" href="#">Leer más</a>                      
-              </div>
-            </div>
+      </nav>                     
+      <!-- FIN NAVBAR -->
 
-            <div class="proyect__card" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">                           
-               <img src="./assets/images/img_proyect/programacion.jpg" alt="Foto del proyecto 3">                            
-              <div class="proyect__card__contenido">
-                <h3 class="proyect__card__titulo">Proyecto 3</h3>
-                <p class="proyect__card__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <a class="proyect__card__btn" href="#">Leer más</a>                      
-              </div>
-            </div>
-            
-            <div class="proyect__card" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">                           
-               <img src="./assets/images/img_proyect/mac.jpg" alt="Foto del proyecto 4">                            
-              <div class="proyect__card__contenido">              
-                <h3 class="proyect__card__titulo">Proyecto 4</h3>
-                <p class="proyect__card__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <a class="proyect__card__btn" href="#">Leer más</a>                      
-              </div>
-            </div>
-            
-            <div class="proyect__card" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">                           
-               <img src="./assets/images/img_proyect/seo.jpg" alt="Foto del proyecto 5">                            
-              <div class="proyect__card__contenido">
-                <h3 class="proyect__card__titulo">Proyecto 5</h3>
-                <p class="proyect__card__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <a class="proyect__card__btn" href="#">Leer más</a>                      
-              </div>
-            </div>
-            
-            <div class="proyect__card" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">                          
-               <img src="./assets/images/img_proyect/website.jpg" alt="Foto del proyecto 6">                          
-              <div class="proyect__card__contenido">
-                <h3 class="proyect__card__titulo">Proyecto 6</h3>
-                <p class="proyect__card__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <a class="proyect__card__btn" href="#">Leer más</a>                      
-              </div>
-            </div>                                                                                  
-        </section>
-        
-      </main>
-      
-      <footer class="footer">
-        <div class="footer__menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="./pages/about.html">About me</a></li>
-            <li><a href="./pages/proyect.html">Proyect</a></li>
-            <li><a href="./pages/skills.html">Skills</a></li>
-            <li><a href="./pages/contact.html">Contact</a></li>
-          </ul>
+      <!-- HEADER   -->
+      <div class="row header mx-0">
+        <div class="col-xs-12 col-md-12 col-lg-12 text-center">
+          <h1>Hola, mi nombre es Gabriel Aguero</h1>
+          <p>Programador Web FullStack</p>
         </div>
-        
-        <div class="footer__redesSociales">          
-          <ul>
-            <li><a href="https://github.com/Gabriel-Aguero" target="_blank"><img src="./assets/images/img_redes/github.svg" alt="Logo de Git Hub"></a></li>
-            <li><a href="https://www.linkedin.com/in/gabriel-ag%C3%BCero/" target="_blank"><img src="./assets/images/img_redes/linkedin.svg" alt="Logo de Linkedin"></a></li>
-            <li><a href="https://twitter.com/gabrielhaguero" target="_blank"><img src="./assets/images/img_redes/twitter.svg" alt="Logo de Twitter"></a></li>
-            <li><a href="#"><img src="./assets/images/img_redes/facebook.svg" alt="Logo de Facebook"></a></li>
-            <li><a href="https://www.instagram.com/gabyhaguero/" target="_blank"><img src="./assets/images/img_redes/instragram.svg" alt="Logo de Instagram"></a></li>
-          </ul>          
-        </div>                
-        <p class="footer__creador">@2022 Desgin an Development by Gabriel Aguero</p>      
-        <img src="./assets/images/wavefooter.svg" alt="imagen de fonde de ola">        
-      </footer>
+      </div>
+      <!-- FIN HEADER -->
+
+      <!-- MAIN -->
+      <main>    
+        <!-- ABOUT -->
+        <div class="row mx-0 about">
+          <div class="col-xs-12 col-md-12 col-lg-12">
+            <h2 class="text-center my-3">Sobre mi</h2>
+            <div class="text-center">
+              <img src="./assets/images/me.svg" alt="">
+              <p class="p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis repellat corrupti, dolore tempore reiciendis deleniti porro. Aliquam dignissimos fugiat odit ex dolor ipsa, dolores numquam obcaecati, hic a quas eaque?</p>
+            </div>
+          </div>          
+        </div>
+        <!-- FIN ABOUT -->
+
+        <!-- PROYECTOS -->
+        <div class="row mx-0 proyectos">
+
+          <div class="col-xs-12 col-md-6 col-lg-4 tarjetas">
+            <div class="card text-center" style="width: 18rem;">
+              <img src="./assets/images/img_proyect/programacion.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Leer Mas</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-lg-4 tarjetas">
+            <div class="card text-center" style="width: 18rem;">
+              <img src="./assets/images/img_proyect/maquetacion.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Leer Mas</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-lg-4 tarjetas">
+            <div class="card text-center" style="width: 18rem;">
+              <img src="./assets/images/img_proyect/mac.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Leer Mas</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-lg-4 tarjetas">
+            <div class="card text-center" style="width: 18rem;">
+              <img src="./assets/images/img_proyect/responsive.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Leer Mas</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-lg-4 tarjetas">
+            <div class="card text-center" style="width: 18rem;">
+              <img src="./assets/images/img_proyect/seo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Leer Mas</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-lg-4 tarjetas">
+            <div class="card text-center" style="width: 18rem;">
+              <img src="./assets/images/img_proyect/website.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Leer Mas</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- FIN PROYECTOS -->
+      </main>
+      <!-- FIN MAIN -->
+      
+      <!-- FOOTER -->
+      <div class="row bg-dark mx-0">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <ul class="nav justify-content-center my-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/about.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/proyect.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/skills.html">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contact.html">Contacto</a>
+            </li>              
+          </ul>
+        </div>        
+        <div class="col-xs-12 col-md-12 col-lg-12 text-center">
+          <a href="https://github.com/Gabriel-Aguero" target="blank" class="btn btn-dark"><img src="./assets/images/img_redes/github.svg" target="blank" alt="Logo de gitHub"></a>        
+          <a href="#" target="blank" class="btn btn-dark"><img src="./assets/images/img_redes/facebook.svg" alt="Logo de Facebook"></a>        
+          <a href="https://www.instagram.com/gabyhaguero/" target="blank" class="btn btn-dark"><img src="./assets/images/img_redes/instragram.svg" alt="Logo de Instagram"></a>        
+          <a href="https://www.linkedin.com/in/gabriel-ag%C3%BCero/" target="blank" class="btn btn-dark"><img src="./assets/images/img_redes/linkedin.svg" alt="Logo de Linkedin"></a>        
+          <a href="https://twitter.com/gabrielhaguero" target="blank" class="btn btn-dark"><img src="./assets/images/img_redes/twitter.svg" alt="Logo de twitter"></a>        
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-12 my-4 text-center">
+          <figcaption class="blockquote-footer">
+            Sitio creado con Bootstrap por <cite title="Source Title">Gabriel Aguero</cite>
+          </figcaption>          
+        </div>
+      </div>      
+      <!-- FIN FOOTER -->
     </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
-    <script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+      <script>
       AOS.init();
-    </script>
+      </script>      
+      <!-- BOOTSTRAP -->
+      <script src="./assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
