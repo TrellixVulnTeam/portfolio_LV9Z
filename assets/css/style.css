@@ -27,14 +27,16 @@
     border-radius:50%;
     border: 1px solid #ccc;
 }
-.proyectos{
-    
-}
 .tarjetas{
     display: flex;    
     justify-content: center;
     flex-wrap: wrap;   
     padding: 10px;     
+    transition:all .9s;
+}
+.tarjetas:hover{
+    transform: perspective(800px) translateZ(50px);
+    /* box-shadow:0 12px 16px rgba(0, 0, 0, 0.2); */
 }
 .form-control{
     resize:none;
