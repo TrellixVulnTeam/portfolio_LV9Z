@@ -1,0 +1,80 @@
+$fuente-primaria:"ROBOTO", sans-serif;
+$fuente-secundaria: "Josefin Sans", sans-serif;
+$colorPrimario:#03dac6;
+$coloAmarillo: #e6ff02;
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: #1e1f26;
+    text-align: center;
+    padding: 0 2em;
+    h1{
+        font-family: $fuente-secundaria;
+        font-size: 5vw;
+        margin: 0;
+        padding-bottom: 0.5rem;
+        letter-spacing: 0.3rem;
+        color: $colorPrimario;
+        transition: all 0.3s ease;
+        z-index: 3; 
+        &:hover{
+            transform: translate3d(0, -10px, 22px);
+            color: $coloAmarillo;
+          }
+    }
+    h2 {
+        font-size: 2vw;
+        letter-spacing: 0.7em;          
+        font-family: "ROBOTO", sans-serif;
+        font-weight: 300;
+        color: #faebd7;
+        z-index: 4;
+        &:hover{
+        color: $coloAmarillo;
+        font-weight: 500;
+        font-size: 2.2vw;
+        }
+    }                      
+}
+.background {
+    position: absolute;
+    height: 90vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: auto;
+}
+
+.loader span {    
+    color: #faebd7;
+    text-shadow: 0 0 0 #faebd7;
+    letter-spacing: 1.7em;          
+    animation: loading 1s ease-in-out infinite alternate;
+  }
+
+@keyframes loading {
+    to {        
+        text-shadow: 20px 0 70px $colorPrimario;
+        color: $coloAmarillo;
+       }
+}
+
+@for $i from 2 through 14 {    
+    .loader span:nth-child(#{$i}) {        
+        animation-delay: (0.1 * $i) - 0.1s;                                
+     }  
+}
+  
+  @media (min-width: 375px) {
+    .loader span {    
+        
+        letter-spacing: 0.9em;          
+      
+      }
+  }
