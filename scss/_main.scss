@@ -1,24 +1,37 @@
 body {
     font-family: "ROBOTO", sans-serif;
+    background: #1e1f26;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  .main{
+    width: 90%;
+    margin: 0 auto;
   }
 
   .slider__about{
     width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;  
-    h2{
+    h3{      
+      font-size: 2em;
       padding-bottom: 20px;
+      color: $colorPrimario;
+      margin-top: 30px;
+      &:hover{
+        color: $coloAmarillo;
+        font-weight: 500;        
+        }
     }    
   }
   .slider{
-    @extend .header;    
-    h2 {
-        @extend h2;
-    }
+    
     p{
-        text-align: center;
+      text-align: center;
       color: #fff;
       font-size: 1.2em;
       font-style: transparent;

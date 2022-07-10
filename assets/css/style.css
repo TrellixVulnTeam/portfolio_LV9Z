@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .header, .slider {
   display: flex;
   flex-direction: column;
@@ -10,7 +15,7 @@
   padding: 0 2em; }
   .header h1, .slider h1 {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 5vw;
+    font-size: 3vw;
     margin: 0;
     padding-bottom: 0.5rem;
     letter-spacing: 0.3rem;
@@ -29,8 +34,7 @@
     z-index: 4; }
     .header h2:hover, .slider h2:hover {
       color: #e6ff02;
-      font-weight: 500;
-      font-size: 2.2vw; }
+      font-weight: 500; }
 
 .background {
   position: absolute;
@@ -139,16 +143,31 @@
   top: 0; }
 
 body {
-  font-family: "ROBOTO", sans-serif; }
+  font-family: "ROBOTO", sans-serif;
+  background: #1e1f26;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.main {
+  width: 90%;
+  margin: 0 auto; }
 
 .slider__about {
   width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .slider__about h2 {
-    padding-bottom: 20px; }
+  .slider__about h3 {
+    font-size: 2em;
+    padding-bottom: 20px;
+    color: #03dac6;
+    margin-top: 30px; }
+    .slider__about h3:hover {
+      color: #e6ff02;
+      font-weight: 500; }
 
 .slider p {
   text-align: center;
@@ -158,54 +177,113 @@ body {
 
 .slider {
   height: 100%; }
-
-.slider h2 {
-  font-size: 20px;
-  padding: 20px;
-  margin-bottom: 20px; }
+  .slider h3 {
+    font-size: 2em;
+    padding-bottom: 20px;
+    color: #03dac6;
+    margin-top: 30px; }
+    .slider h3:hover {
+      color: #e6ff02;
+      font-weight: 500; }
 
 .galeria {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   margin: auto;
   grid-gap: 10px;
   overflow: hidden; }
-
-.imagen {
-  width: 100%;
-  position: relative; }
-
-.imagen img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover; }
-
-.overlay {
-  position: absolute;
-  color: #fff;
-  bottom: 0;
-  left: 0;
-  background: rgba(3, 218, 197, 0.801);
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  transition: 1s ease-out;
-  cursor: pointer; }
-
-.overlay a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px; }
-
-.overlay a {
-  color: #fff;
-  font-weight: 300;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%); }
+  .galeria .imagen {
+    width: 100%;
+    position: relative; }
+    .galeria .imagen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .galeria .imagen .overlay {
+      display: flex;
+      position: absolute;
+      color: #fff;
+      bottom: 0;
+      left: 0;
+      background: rgba(3, 218, 197, 0.801);
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: 1s ease-out;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      .galeria .imagen .overlay a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px; }
 
 .imagen:hover .overlay {
   height: 100%; }
+
+.slider p {
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  font-style: transparent; }
+
+.slider h4 {
+  color: #03dac6;
+  font-size: 1.2em;
+  letter-spacing: 0;
+  text-align: start;
+  padding: 10px; }
+  .slider h4:hover {
+    color: #e6ff02;
+    font-weight: 500; }
+
+.slider .slider__skill {
+  width: 100%;
+  max-width: 1200px; }
+  .slider .slider__skill .slider__cards {
+    width: 100%;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-around; }
+    .slider .slider__skill .slider__cards .cards {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background: rgba(79, 79, 80, 0.726);
+      border-radius: 5px;
+      margin: 0 10px; }
+      .slider .slider__skill .slider__cards .cards p {
+        text-align: start;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 0 10px; }
+
+@media (max-width: 768px) {
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .slider__skill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .slider__cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background: rgba(79, 79, 80, 0.726);
+    border-radius: 5px;
+    margin-top: 10px; }
+  p {
+    text-align: start;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 0 20px; } }
