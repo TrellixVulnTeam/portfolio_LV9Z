@@ -60,7 +60,7 @@ $estilosHeader:(
 .loader span {    
     color: #faebd7;
     text-shadow: 0 0 0 #faebd7;
-    letter-spacing: 1.7em;          
+    letter-spacing: 1.3em;          
     animation: loading 1s ease-in-out infinite alternate;
   }
 
@@ -76,11 +76,35 @@ $estilosHeader:(
         animation-delay: (0.1 * $i) - 0.1s;                                
      }  
 }
+  @media (min-width: 270px) {
+    .loader span {            
+        letter-spacing: 1.1em;                        
+      }
+      .header { 
+        h2 {
+            font-size: 3vw;
+            letter-spacing: 0.5em;          
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:space-around;
+
+            font-weight: 300;
+            color: #faebd7;
+            z-index: 4;
+            &:hover{
+            color: $coloAmarillo;
+            font-weight: 500;        
+            }
+        } 
+      }
+  }
   
-  @media (min-width: 375px) {
-    .loader span {    
-        
-        letter-spacing: 0.9em;          
+  @media (min-width: 375px){
+    .loader span {            
+        letter-spacing: 0.7em;          
       
       }
+
+      
   }
