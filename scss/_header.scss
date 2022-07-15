@@ -2,14 +2,21 @@ $fuente-primaria:"ROBOTO", sans-serif;
 $fuente-secundaria: "Josefin Sans", sans-serif;
 $colorPrimario:#03dac6;
 $coloAmarillo: #e6ff02;
+$estilosHeader:(
+    direccion: column,
+    alineacionVertical: center,
+    alineacionHorizontal: center,
+    posision: relative    
+);
+
 
 .header{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: map-get($estilosHeader, direccion);
+    justify-content: map-get($estilosHeader, alineacionVertical);
+    align-items: map-get($estilosHeader, alineacionHorizontal);
     height: 100vh;
-    position: relative;
+    position: map-get($estilosHeader, posision); 
     background-color: #1e1f26;
     text-align: center;
     padding: 0 2em;

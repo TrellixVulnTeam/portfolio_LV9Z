@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://gabrielhaguero.com/</title>
+  <link>http://gabrielhaguero.com/</link>
+
+<item>
+     <link>https://gabrielhaguero.com/</link>
+     <title>Gabriel Aguero</title>
+     <description>Portfolio personal de Gabriel Aguero, Programador Web Full Stack</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://gabrielhaguero.com/index.html</link>
+     <title>Gabriel Aguero</title>
+     <description>Portfolio personal de Gabriel Aguero, Programador Web Full Stack</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://gabrielhaguero.com/pages/about.html</link>
+     <title>Gabriel Aguero</title>
+     <description>Portfolio personal de Gabriel Aguero, Programador Web Full Stack</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://gabrielhaguero.com/pages/proyect.html</link>
+     <title>Gabriel Aguero</title>
+     <description>Portfolio personal de Gabriel Aguero, Programador Web Full Stack</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://gabrielhaguero.com/pages/skills.html</link>
+     <title>Gabriel Aguero</title>
+     <description>Portfolio personal de Gabriel Aguero, Programador Web Full Stack</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://gabrielhaguero.com/pages/contact.html</link>
+     <title>Gabriel Aguero</title>
+     <description>Portfolio personal de Gabriel Aguero, Programador Web Full Stack</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

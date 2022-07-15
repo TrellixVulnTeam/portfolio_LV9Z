@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio personal de Gabriel Aguero, Programador Web Full Stack">
-    <meta name="keywords"  content="HTML, CSS, JS, PORTFOLIO, DEVELOPER, PROGRAMADOR WEB, DESARROLLADOR BACKEND"> 
-    <script src="https://kit.fontawesome.com/d8c98b08b3.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Este es mi sitio web. Mi nombre es Gabriel Aguero y soy Programador Web Full Stack. Si quieres tu sitio web no dudes en consultarme. Hecha un vistazo a mis proyectos y aplicaciones web.">
+    <meta name="keywords"  content="HTML, CSS, JS, SASS, PORTFOLIO, DEVELOPER, PROGRAMADOR WEB, DESARROLLADOR BACKEND, RESPONSIVE"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d8c98b08b3.js" crossorigin="anonymous"></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Raleway:wght@100;200;300;400;500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">    
     <link rel="stylesheet" href="../assets/css/style.css">        
+    <link rel="stylesheet" href="../incons-fontawesome/css/all.min.css">
     <title>Gabriel Aguero</title>   
 </head> 
   <body>   
    
 
-    <header class="header">
+    <header class="header">     
       <h1>PROGRAMADOR WEB FULLSTACK</h1>
       <h2 class="span loader">
         <span class="m">G</span>
@@ -40,7 +40,7 @@
         <span class="m">E</span>
         <span class="m">R</span>
         <span class="m">O</span>        
-      </h2>
+      </h2>    
       <div class="nav-container">
         <a class="nav-tab" href="../index.html">HOME</a>
         <a class="nav-tab" href="./about.html">ABOUT</a>
@@ -49,83 +49,114 @@
         <a class="nav-tab" href="./contact.html">CONTACT</a>
         <span class="nav-tab-slider"></span>
       </div>
+     
     </header>
     
-    <main class="main">
-         
-      <section class="slider" id="tab-graphql">
-        <h2>PROYECTOS</h2>
-        
-        <article class="galeria">
-          <figure class="imagen">
-            <img src="../assets/images/img_proyect/FytoDesign.jpg" alt="">
+    <main class="container">            
+      <div class="row">        
+        <p class="text-center titulo">Sitio creado por @Gabriel Aguero</p>               
+        <div class="col-12 mt-2 text-center redes">         
+          <a href="https://twitter.com/gabrielhaguero" target="_blank"><i class="fa-brands fa-twitter m-3" ></i></a>
+          <a href="https://www.instagram.com/gabyhaguero/" target="_blank"><i class="fa-brands fa-instagram m-3"></i></a>
+          <a href="https://github.com/Gabriel-Aguero" target="_blank"><i class="fa-brands fa-github m-3"></i></a>
+          <a href="https://www.linkedin.com/in/gabriel-ag%C3%BCero/" target="_blank"><i class="fa-brands fa-linkedin m-3"></i></a>
+        </div>       
+      </div>
+      <!-- seccion proyectos    -->
+      <section class="row mt-5">
+        <h3>PROYECTOS</h3>
+                
+        <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+          <div class="imagen">
+            <img src="../assets/images/img_proyect/FytoDesign.jpg" alt="imagen del sitio web Fyto">
             <div class="overlay">
               <a href="https://gabriel-aguero.github.io/landingPages/" target="_blank">
                 Ver Proyecto</a>
-            </div>
-          </figure>
+              </div>
+          </div>
+        </div>
 
-          <figure class="imagen">
-            <img src="../assets/images/img_proyect/huddleDesign.jpg" alt="">
+        <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+          <div class="imagen">
+            <img src="../assets/images/img_proyect/huddleDesign.jpg" alt="imagen del sitio web huddle">
             <div class="overlay">
               <a href="https://gabriel-aguero.github.io/huddlePages/" target="blank">Ver Proyecto</a>
             </div>      
-          </figure>
+          </div>
+        </div>
 
-          <figure class="imagen">
-            <img src="../assets/images/img_proyect/sunnysideDesign.jpg" alt="">
+        <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+          <div class="imagen">
+            <img src="../assets/images/img_proyect/sunnysideDesign.jpg" alt="imagen del sitio web sunnyside">
             <div class="overlay">
-              <a href="">Ver Proyecto</a>
+              <a href="https://gabriel-aguero.github.io/sunnyside/" target="blank">Ver Proyecto</a>
             </div>
-          </figure>
+          </div>
+        </div>
 
-          <figure class="imagen">
-            <img src="../assets/images/img_proyect/huddleDesign.jpg" alt="">
+        <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+          <div class="imagen">
+            <img src="../assets/images/img_proyect/masterDesign.jpg" alt="imagen del sitio web master">
             <div class="overlay">
-              <a href="">Ver Proyecto</a>
+              <a href="https://gabriel-aguero.github.io/webmaster/" target="blank">Ver Proyecto</a>
             </div>
-          </figure>
+          </div>
+        </div>
 
-          <figure class="imagen">
-            <img src="../assets/images/img_proyect/huddleDesign.jpg" alt="">
+        <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+          <div class="imagen">
+            <img src="../assets/images/img_proyect/huddleDesign.jpg" alt="imagen del sitio web huddle">
             <div class="overlay">
-              <a href="">Ver Proyecto</a>
+              <a href="https://gabriel-aguero.github.io/huddlePages/" target="blank">Ver Proyecto</a>
             </div>
-          </figure>
+          </div>
+        </div>
 
-          <figure class="imagen">
-            <img src="../assets/images/img_proyect/huddleDesign.jpg" alt="">
+        <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+          <div class="imagen">
+            <img src="../assets/images/img_proyect/huddleDesign.jpg" alt="imagen del sitio web huddle">
             <div class="overlay">
-              <a href="">Ver Proyecto</a>
+              <a href="https://gabriel-aguero.github.io/huddlePages/" target="blank">Ver Proyecto</a>
             </div>
-          </figure>
+          </div>
+        </figure>                    
+      </section>
 
-        </article>
+      <!-- seccion contacto   -->
+      <section class="row">
+        <h3 class="mt-5">CONTACT</h3>
+        <div class="col-sm-12 col-lg-8 m-auto">                  
+          <form class="form m-3">
+            <div class="form__container">
+              <h2 class="form__title">Contactame</h2>
+              <input type="text" class="form__input" placeholder="Nombre:">
+              <input type="email" class="form__input" placeholder="Email:">
+              <textarea class="form__input form__input--message" placeholder="Mensaje"></textarea>
+              <input type="submit" value="Enviar" class="form__cta"></input>
+            </div>
+          </form>          
+        </div>
+        
                 
+      </section>      
 
-      </section>
-     
-      
-
-
-
-      <section class="slider" id="tab-deno">
-        <h2>DENO</h2>
-        <p>a modern runtime</p>
-      </section>
     </main>
 
-    <footer class="footer">
-        <section class="redes">
-          
-        </section>
+    <footer>
+      <div class="row">        
+          <p class="text-center titulo">Sitio creado por @Gabriel Aguero</p>               
+        <div class="col-12 mt-2 text-center redes">         
+          <a href="https://twitter.com/gabrielhaguero" target="_blank"><i class="fa-brands fa-twitter m-3" ></i></a>
+          <a href="https://www.instagram.com/gabyhaguero/" target="_blank"><i class="fa-brands fa-instagram m-3"></i></a>
+          <a href="https://github.com/Gabriel-Aguero" target="_blank"><i class="fa-brands fa-github m-3"></i></a>
+          <a href="https://www.linkedin.com/in/gabriel-ag%C3%BCero/" target="_blank"><i class="fa-brands fa-linkedin m-3"></i></a>
+        </div>       
+      </div>      
+      
     </footer>
     <canvas class="background"></canvas>
-
- 
       <script src="../assets/js/bootstrap.bundle.min.js"></script>
       <script src="../assets/js/header.js"></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-  
   </body>
 </html>

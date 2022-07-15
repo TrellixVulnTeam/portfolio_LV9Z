@@ -1,0 +1,23 @@
+En el proyecto en la carpeta raiz cree el archivo seo.txt 
+con el objetivo de detallar las caracteristicas seo que agregue.
+
+El en archivo index agregue las siguientes caracteristicas:
+
+* descripcion: mediante la etiqueta name descripcion, agregue el 
+siguiente parrafo: "Este es mi sitio web. Mi nombre es Gabriel Aguero y soy Programador Web Full Stack." 
+Si quieres tu sitio web no dudes en consultarme. Hecha un vistazo a mis proyectos y aplicaciones web.
+
+Palabras claves: 
+* Desarrollador 
+* Programador 
+* Backend
+* Frontend
+* Sitios web 
+* Paginas web 
+* HTML, CSS, SASS, BOOTSTRAP, JAVASCRIPT
+* Redes sociales
+* Proeycto web
+* aplicaciones Web
+* aplicaciones mobile 
+
+Para el encabezado utilice un h1 con el texto "PROGRAMADOR WEB FULLSTACK"
