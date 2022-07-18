@@ -76,7 +76,7 @@ $estilosHeader:(
         animation-delay: (0.1 * $i) - 0.1s;                                
      }  
 }
-  @media (min-width: 270px) {
+  @media (min-width: 200px) {
     .loader span {            
         letter-spacing: 1.1em;                        
       }

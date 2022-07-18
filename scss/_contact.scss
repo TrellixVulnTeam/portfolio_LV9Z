@@ -5,7 +5,7 @@
 form{
 	background:  rgba(79, 79, 80, 0.404);
     width: 100%;    
-    border-radius: 1em;
+    border-radius: .3em;
     padding:3.0em 1.5em;
     .form__container{
         width: 100%;
@@ -19,13 +19,20 @@ form{
             margin-bottom:.2em;
         }
         .form__input{   
+            background:  rgba(79, 79, 80, 0.404);
             font-size:1rem;
             padding:.8em 1em;
             outline: none;
             border: none;
-            border: 1px solid #bbb0b0;
-            border-radius: 0.2em;
-        }
+            border: none;
+            color: rgba(255, 255, 255, 0.726);
+            border-bottom: 2px solid #03dac6;
+            
+            &:hover{
+                transition:0.3s ease border-bottom;    
+                border-bottom: 2px solid #e6ff02;                
+            }                                                                                                        
+        }                
         .form__input--message{
             resize: none;
         }
@@ -37,7 +44,11 @@ form{
             font-weight: 300;
             padding:.7em 0;
             border-radius: 0.2em;
-            cursor: pointer;
+            
+            &:hover{
+                background-color: rgba(3, 218, 197, 0.815);
+                cursor: pointer;
+            }
         }
     }
 }
